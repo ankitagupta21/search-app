@@ -1,9 +1,10 @@
+import React, { useState } from "react";
 import "./Nav.css";
 
 const Nav = ({ handleInputChange, query }) => {
   return (
-    <nav>
-      <div className="nav-container">
+    <nav className="nav-container">
+      <div className="nav-icontainer">
         <input
           className="search-input"
           type="text"

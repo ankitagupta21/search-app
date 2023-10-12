@@ -3,15 +3,12 @@ import { useState } from "react";
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import products from "./db/data";
-import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
 
 function App() {
-  console.log(products.data);
   const [selectedCategory, setSelectedCategory] = useState(null);
-
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
@@ -21,12 +18,7 @@ function App() {
   const filteredItems = products.filter(
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
-
   const handleChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
-  const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
 
@@ -44,7 +36,7 @@ function App() {
           } else if (selected === "1000" && newPrice > 500 && newPrice < 1000) {
             newPriceNumber = true;
           }
-          console.log(selected, newPriceNumber, star);
+
           return (
             category === selected || star === Number(selected) || newPriceNumber
           );

@@ -6,10 +6,7 @@ const Rating = ({ handleChange }) => {
     <>
       <div>
         <h2 className="sidebar-title color-title">RATINGS</h2>
-        <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test" />
-          <span className="checkmark"></span>All
-        </label>
+
         <Input
           handleChange={handleChange}
           value="5"

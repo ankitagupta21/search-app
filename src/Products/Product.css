@@ -11,11 +11,17 @@
     width:11rem;
     cursor: pointer;
   }
+
+  .image-container {
+    position: relative;
+  }
   
   .card-img {
     width: 11rem;
     height: 12rem;
     margin-bottom: 0.5rem;
+    position: relative;
+    z-index: -1;
   }
   
   .card-title {
@@ -51,4 +57,21 @@
   .card-price del {
     color: rgb(204, 204, 204);
   }
+
+  .like {
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    position: absolute; 
+    left: 9rem; 
+    top: 10px;
+  }
+
+  .dlike{
+    color: white;
+    font-size: 1.2rem;
+    position: absolute; 
+    left: 9rem; 
+    top: 10px;
+  }
+
   

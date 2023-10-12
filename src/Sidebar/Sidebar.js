@@ -1,6 +1,7 @@
 import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Rating from "./Rating/Rating";
+
 import "./Sidebar.css";
 
 const Sidebar = ({ handleChange }) => {
